@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Jeu du serpent</title>
+        <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
     </head>
     <body>
+         <div id="game-container">
+            <!-- Le canvas est injecté ici par le JS -->
+        </div>
+
+        <!-- Contrôles tactiles -->
+        <div id="mobile-controls">
+            <div class="controls-row">
+                <div class="ctrl-btn" id="btn-up">▲</div>
+            </div>
+            <div class="controls-row">
+                <div class="ctrl-btn" id="btn-left">◀</div>
+                <div class="ctrl-btn" id="btn-down">▼</div>
+                <div class="ctrl-btn" id="btn-right">▶</div>
+            </div>
+            <div class="controls-row">
+                <div class="ctrl-btn" id="btn-restart" style="width: 144px; font-size: 16px;">🔄 Rejouer</div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,67 @@
+body {
+                margin: 0;
+                background-color: #1a1a1a;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                font-family: sans-serif;
+            }
+
+            #game-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Le canvas sera ajouté par le JS, on le rend responsive */
+            canvas {
+                max-width: 95vw !important;
+                max-height: 60vw !important;
+                height: auto !important;
+                border: 10px solid gray !important;
+                margin: 10px auto !important;
+            }
+
+            /* Joystick mobile */
+            #mobile-controls {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+                margin-top: 10px;
+            }
+
+            .controls-row {
+                display: flex;
+                gap: 8px;
+            }
+
+            .ctrl-btn {
+                width: 64px;
+                height: 64px;
+                background-color: #333;
+                border: 2px solid #666;
+                border-radius: 12px;
+                color: white;
+                font-size: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                user-select: none;
+                -webkit-tap-highlight-color: transparent;
+                transition: background-color 0.1s;
+            }
+
+            .ctrl-btn:active {
+                background-color: #555;
+            }
+
+            /* Afficher les contrôles uniquement sur mobile */
+            @media (max-width: 768px) {
+                #mobile-controls {
+                    display: flex;
+                }
+            }
